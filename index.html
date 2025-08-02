@@ -4,56 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viswanath | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
         }
         header {
             text-align: center;
-            padding: 40px 20px;
-            background-color: #222;
-            color: white;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: #00e0ff;
+            text-shadow: 0 0 10px #00e0ff;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #b0e0ff;
         }
         header img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             margin-top: 20px;
             object-fit: cover;
+            border: 3px solid #00e0ff;
+            box-shadow: 0 0 15px #00e0ff;
         }
-        h1 {
-            margin: 0;
-        }
+
         main {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         h2 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            color: #00e0ff;
+            text-align: center;
+            margin-bottom: 30px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(0, 224, 255, 0.2);
         }
-        ul li {
-            margin: 15px 0;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
         }
-        a {
+        .project-card a {
             text-decoration: none;
-            color: #007BFF;
             font-weight: bold;
+            color: #00e0ff;
+            font-size: 1.2rem;
         }
-        a:hover {
+        .project-card a:hover {
             text-decoration: underline;
+        }
+        .project-card p {
+            margin: 8px 0 0;
+            color: #c0dfff;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -61,35 +83,45 @@
     <header>
         <h1>Viswanath</h1>
         <p>
-MSc Computer Science Student | Backend & Full-Stack Developer |
-Spring Boot, Flask, Kafka, Redis, Docker, AWS | 
-Python, Java, JavaScript, SQL
-</p>
-
+            MSc Computer Science Student | Backend & Full-Stack Developer |
+            Spring Boot, Flask, Kafka, Redis, Docker, AWS |
+            Python, Java, JavaScript, SQL
+        </p>
+        <img src="./1614928267124.jpg" alt="Viswanath Profile Picture">
     </header>
 
     <main>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/YOUR_USERNAME/GreenCampus" target="_blank">
-                        Green Campus – Smart Food Expiring Discount System
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/YOUR_USERNAME/ScheduleXSpring-phase2" target="_blank">
-                        Schedule X – Case and Task Scheduling System
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/YOUR_USERNAME/SoftwareWorkshopLabAssistant" target="_blank">
-                        Software Workshop Lab Assistant – Real-time Doubt Tracking
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <a href="https://github.com/YOUR_USERNAME/GreenCampus" target="_blank">
+                Green Campus – Smart Food Expiring Discount System
+            </a>
+            <p>
+                Full-stack Flask platform that tracks near-expiry food on campus,
+                applies dynamic discounts, and helps reduce food waste using IoT-simulated data.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/YOUR_USERNAME/ScheduleXSpring-phase2" target="_blank">
+                Schedule X – Case and Task Scheduling System
+            </a>
+            <p>
+                Spring Boot CRUD application with secure user management, case tracking,
+                billing analytics, and JPA-based search filters. Used by a High Court advocate in India.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/YOUR_USERNAME/SoftwareWorkshopLabAssistant" target="_blank">
+                Software Workshop Lab Assistant – Real-time Doubt Tracking
+            </a>
+            <p>
+                Flask-SocketIO web app for 100-seat labs, allowing students to submit help requests
+                and TAs to manage a live queue dynamically.
+            </p>
+        </div>
     </main>
 </body>
 </html>
-
