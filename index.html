@@ -73,6 +73,7 @@
         .project-card:nth-child(1) { animation-delay: 0.2s; }
         .project-card:nth-child(2) { animation-delay: 0.4s; }
         .project-card:nth-child(3) { animation-delay: 0.6s; }
+        .project-card:nth-child(4) { animation-delay: 0.8s; }
 
         .project-card:hover {
             transform: translateY(-5px) scale(1.01);
@@ -128,6 +129,18 @@
         <h2>Projects</h2>
 
         <div class="project-card">
+            <a href="https://github.com/Nairvishwa24998/Othello-AI-Arena" target="_blank">
+                Othello AI Arena – AlphaZero-Style Game AI (Ongoing)
+            </a>
+            <p>
+                Built competitive Othello agents using Alpha-Beta, MCTS, and Neural-MCTS with a deep residual CNN trained on 150K+ self-play games.
+                Engineered transposition tables and iterative deepening for 500× search speedup (23.4 s → 44 ms),
+                and accelerated neural inference with XLA for 16× MCTS runtime reduction (127 s → 8 s).
+                Flask + WebSocket-based real-time gameplay is under active development.
+            </p>
+        </div>
+
+        <div class="project-card">
             <a href="https://github.com/Nairvishwa24998/Green-campus" target="_blank">
                 Green Campus – Smart Food Expiring Discount System
             </a>
@@ -165,5 +178,3 @@
     </footer>
 </body>
 </html>
-
-
